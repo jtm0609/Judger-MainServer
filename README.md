@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 명
 
-## Available Scripts
+온라인저지 서버 개발
 
-In the project directory, you can run:
+## 프로젝트 소개
+학교의 오픈소스운영보조원으로 일하면서 스프링부트를 활용한 서버개발을 하였으며, 해당 프로젝트는 관리자, 학생, 교수 3개의 모듈로 구분지어 개발하였으며, 
+관리자는 컨테스트를 생성, 수정등 컨테스트를 관리하는 부분을 담당하며,
+교수는 학생들에게 과제를출제하거나, 시험을 출제할수있다. 또한 학생은 컨테스트에 참가하거나, 교수가 낸 과제를 제출할수있다.
+온라인저지서버개발은 거의 완료된상태이며, 과제 및 시험을 출제, 제출 할수있는 API들을 개발중에있다.
 
-### `yarn start`
+### 프로젝트 기간
+2020.06.01 ~ 2020 11.31
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 역할 배정
+프론트개발(react.js) 2명, 백엔드개발(springBoot) 2명
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 본인 역할
 
-### `yarn test`
+#### 컨테스트 관련 API 개발
+* 관리자 모듈의 컨테스트등록,수정,조회,삭제 API 개발
+* 관리자 모듈의 문제,테스트케이스업로드, 다운로드 및 컨테스트에 문제 등록, 수정, 조회 API 개발
+* 관리자 모듈의 컨테스트 신청 및 승인 및 조회 API 개발
+* 학생 모듈의 질문등록,조회,삭제 API개발
+* 학생 모듈의 컨테스트 코드 제출 및 스코어보드 확인 API 개발
+* 학생이 소스코드 제출시 채점서버와 REST API통신을 통해 결과 수신 API 개발
+* JPA를 통한 DB개발
+* 스프링부트 프로젝트와 MYSQL DB와 연동
+* Junit을 통한 서버API테스트
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 기술스택
+SpringBoot, Gradle, MySQL, JPA, junit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 개선사항
+현재 회원DB를 관리하고있으나 인증서버 미구현상태로 학교에서 인증서버가 나오는대로 회원가입 및 로그인 API를 구현할생각이다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
